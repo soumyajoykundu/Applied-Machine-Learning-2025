@@ -1,5 +1,0 @@
-venv/
-/raw_data.csv
-/train.csv
-/test.csv
-/validation.csv
