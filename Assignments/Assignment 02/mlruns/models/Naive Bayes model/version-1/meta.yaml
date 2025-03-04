@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1741082048118
+current_stage: None
+description: null
+last_updated_timestamp: 1741082048118
+name: Naive Bayes model
+run_id: 07e8d5b5b20d42e7b2504e3d0f34998f
+run_link: null
+source: file:///content/mlruns/0/07e8d5b5b20d42e7b2504e3d0f34998f/artifacts/sklearn-model
+status: READY
+status_message: null
+storage_location: file:///content/mlruns/0/07e8d5b5b20d42e7b2504e3d0f34998f/artifacts/sklearn-model
+user_id: null
+version: 1
