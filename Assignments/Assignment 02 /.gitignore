@@ -1,0 +1,5 @@
+venv/
+/SMSSpamCollection.csv
+/train.csv
+/test.csv
+/validation.csv
