@@ -10,7 +10,7 @@ Assignment-3-Testing-Model-Serving/
 ├── test.py                    # Unit tests and integration tests for model scoring and Flask endpoint
 ├── coverage.txt               # Test and Score coverage report
 ├── model/
-│   └── mpdel_pipeline.pkl     # Saved model (CountVectorizer -> Logistic Regression) in `.pkl` format
+│   └── model_pipeline.pkl     # Saved model (CountVectorizer -> Logistic Regression) in `.pkl` format
 └── README.md                  # Project overview and instructions
 ```
 ## **Unit Testing**
