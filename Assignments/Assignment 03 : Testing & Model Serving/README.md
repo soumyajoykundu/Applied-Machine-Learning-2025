@@ -1,31 +1,48 @@
-Assignment 3: Testing & Model Serving [due 1 Apr 2025] 
-unit testing
-In score.py, write a function with the following signature that scores a trained model on a text:
+Assignment 3: Testing & Model Serving
 
-            def score(text:str, 
-                            model:sklearn.estimator, 
-                            threshold:float) -> prediction:bool, 
-                                                         propensity:float
-In test.py, write a unit test function test_score(...) to test the score function.
-You may reload and use the best model saved during experiments in train.ipynb (in joblib/pkl format) for testing the score function.
-You may consider the following points to construct your test cases:
-does the function produce some output without crashing (smoke test)
-are the input/output formats/types as expected (format test)
-is prediction value 0 or 1 
-is propensity score between 0 and 1
-if you put the threshold to 0 does the prediction always become 1
-if you put the threshold to 1 does the prediction always become 0
-on an obvious spam input text is the prediction 1 
-on an obvious non-spam input text is the prediction 0
-flask serving
-In app.py, create a flask endpoint /score that receives a text as a POST request and gives a response in the json format consisting of prediction and propensity
-In test.py, write an integration test function test_flask(...) that does the following:
--  launches the flask app using command line (e.g. use os.system)
--  test the response from the localhost endpoint
--  closes the flask app using command line
+Overview
 
-       In coverage.txt produce the coverage report output of the unit test and integration test using pytest
+This assignment focuses on testing a trained model for text classification and serving it using a Flask API. The objective is to implement unit tests for model scoring, integrate an endpoint for predictions, and generate a coverage report using pytest.
 
+Unit Testing
 
-https://docs.pytest.org/en/8.0.x/
-https://flask.palletsprojects.com/en/2.3.x/quickstart/
+In score.py, implement a function to evaluate a trained model on a given text input. The unit tests in test.py validate various aspects of the scoring function, ensuring:
+
+The function runs without errors (smoke test).
+
+The input/output formats are correct.
+
+Predictions are either 0 or 1.
+
+Propensity scores range between 0 and 1.
+
+Edge cases for threshold values (0 and 1) behave as expected.
+
+The model correctly identifies spam and non-spam text.
+
+Flask Serving
+
+A Flask application (app.py) is implemented with a /score endpoint that receives text as a POST request and returns predictions in JSON format.
+
+Integration Testing
+
+Integration tests in test.py verify the Flask service by:
+
+Launching the Flask app.
+
+Sending requests to the /score endpoint.
+
+Validating the response format and content.
+
+Closing the Flask app.
+
+Coverage Report
+
+The test coverage report (coverage.txt) is generated using pytest with coverage analysis to evaluate test completeness. The report includes details on uncovered lines and ensures robust testing practices.
+
+For further details, refer to the official documentation:
+
+Pytest Documentation
+
+Flask Documentation
+
