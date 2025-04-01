@@ -3,6 +3,7 @@
 ## **Overview**
 This assignment focuses on testing a trained model for text classification and serving it using a Flask API. The objective is to implement unit tests for model scoring, integrate an endpoint for predictions, and generate a coverage report using `pytest`.
 
+```
 Assignment-3-Testing-Model-Serving/
 ├── app.py                     # Flask application for serving the model
 ├── score.py                   # Contains the score function for model prediction
@@ -11,7 +12,7 @@ Assignment-3-Testing-Model-Serving/
 ├── model/
 │   └── mpdel_pipeline.pkl     # Saved model (CountVectorizer -> Logistic Regression) in `.pkl` format
 └── README.md                  # Project overview and instructions
-
+```
 ## **Unit Testing**
 In `score.py`, implement a function to evaluate a trained model on a given text input. The unit tests in `test.py` validate various aspects of the scoring function, ensuring:
 - **The function runs without errors** (smoke test).
