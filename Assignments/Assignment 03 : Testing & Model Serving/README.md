@@ -33,7 +33,7 @@ Integration tests in `test.py` verify the Flask service by:
 - **Closing the Flask app**.
 
 ## **Coverage Report**
-The test coverage report (`coverage.txt`) is generated using `pytest` with coverage analysis to evaluate test completeness. The report includes details on uncovered lines and ensures robust testing practices.
+The test coverage report (`coverage.txt`) is generated using `pytest` with coverage analysis to evaluate test completeness (`test.py` and `score.py`). The report includes details on uncovered lines and ensures robust testing practices.
 
 ---
 For further details, refer to the official documentation:
