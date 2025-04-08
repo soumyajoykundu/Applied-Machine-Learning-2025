@@ -66,6 +66,7 @@ Assignment-4-Containerization-CI/
     cp pre-commit.txt .git/hooks/pre-commit
     chmod +x .git/hooks/pre-commit
 ```
+
 ## References
 
 - [**Docker Documentation**](https://docs.docker.com/)
