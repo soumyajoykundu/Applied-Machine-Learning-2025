@@ -7,10 +7,9 @@ warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
 
-
 model = pickle.load(open("model_pipeline.pkl", "rb"))
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])  # MUST have leading slash
 def home():
     if request.method == 'POST':
         text = request.form['text']
