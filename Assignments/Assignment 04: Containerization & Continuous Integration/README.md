@@ -24,16 +24,16 @@ Assignment-4-Containerization-CI/
 ## Docker Containerization
 
 * The Dockerfile:
-  * Installs required dependencies using requirements.txt
-  * Copies app.py and score.py
-  * Launches the app using: python app.py
-  * Exposes port 5000
+  * Installs required dependencies using `requirements.txt`
+  * Copies `app.py` and `score.py`
+  * Launches the app using: python `app.py`
+  * Exposes port `5000`
 
 * To build and run the container:
-
+```
     docker build -t spam-detector .
     docker run -p 5000:5000 spam-detector
-
+```
 ## Testing & Coverage
 
 * test.py includes:
@@ -46,11 +46,11 @@ Assignment-4-Containerization-CI/
     * Stops and removes the container
 
 * To generate test results and coverage:
-
+```
     pytest --tb=short --maxfail=1 > test_results.txt
     coverage run -m pytest
     coverage report > coverage.txt
-
+```
 ## Pre-Commit Hook
 
 * pre-commit.txt is a bash script for git pre-commit.
@@ -62,10 +62,10 @@ Assignment-4-Containerization-CI/
   * Commit is aborted
 
 * To install the pre-commit hook:
-
+```
     cp pre-commit.txt .git/hooks/pre-commit
     chmod +x .git/hooks/pre-commit
-
+```
 ## References
 
 - [**Docker Documentation**](https://docs.docker.com/)
