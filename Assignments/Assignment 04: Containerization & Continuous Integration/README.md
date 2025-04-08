@@ -6,6 +6,7 @@
 * Git pre-commit hook for continuous integration.
 * Coverage report for testing completeness.
 
+```
 Assignment-4-Containerization-CI/
 ├── app.py                 # Flask app serving the score function with basic HTML/CSS UI
 ├── score.py               # Function to predict spam using a pre-trained model
@@ -18,6 +19,7 @@ Assignment-4-Containerization-CI/
 ├── coverage.txt           # Coverage report for test.py and score.py
 ├── pre-commit.txt         # Bash script for git pre-commit hook
 └── README.md              # This file
+```
 
 ## Docker Containerization
 
@@ -66,6 +68,7 @@ Assignment-4-Containerization-CI/
 
 ## References
 
-* Docker Documentation: https://docs.docker.com/
-* Pytest Documentation: https://docs.pytest.org/
-* Git Hooks Documentation: https://git-scm.com/docs/githooks
+- [**Docker Documentation**](https://docs.docker.com/)
+- [**Pytest Documentation**](https://docs.pytest.org/en/8.0.x/)
+- [**Flask Documentation**](https://flask.palletsprojects.com/en/2.3.x/quickstart/)
+- [**Git Hooks Documentation**](https://git-scm.com/docs/githooks)
