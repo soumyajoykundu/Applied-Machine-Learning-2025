@@ -12,7 +12,7 @@ This project demonstrates how to use **transfer learning** with a pre-trained Co
 ### 📁 Project Structure
 
 ```bash
-duck-vs-chicken/
+Image Classification/
 │
 ├── 5.1_Chicken_&_Duck.ipynb  # Jupyter notebook
 ├── 5.1_data.zip              # Contains ~100 duck and ~100 chicken images
