@@ -5,13 +5,13 @@ This project demonstrates how to use **transfer learning** with a pre-trained **
 ----------------------------------------
 
 ### 📁 Project Structure
-
+```
 Sentiment Analysis/
 │
 ├── Sentiment_Analysis.ipynb   # Google Colab notebook
 ├── 5.2_data.zip                    # Labeled sentiment dataset (from Kaggle)
 └── README.md                                # You're here
-
+```
 ----------------------------------------
 
 ### 📦 Dataset
